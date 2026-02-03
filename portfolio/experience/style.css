@@ -464,38 +464,3 @@ header .navbar ul li a:hover{
   top: calc(100% - 12rem);
 }
 /* scroll top ends */
-/* ===== FIX: Remove black/gray hover effect on images ===== */
-.about .image img,
-.home .image img,
-.work .box img,
-.tilt {
-  filter: none !important;
-  -webkit-filter: none !important;
-}
-
-.about .image img:hover,
-.home .image img:hover,
-.work .box img:hover,
-.tilt:hover {
-  filter: none !important;
-  -webkit-filter: none !important;
-}
-/* ===== FIX HERO AVATAR SIZE (LIKE JIGAR SABLE) ===== */
-.home .image {
-  width: 260px !important;
-  height: 260px !important;
-  margin: auto;
-}
-
-.home .image img {
-  width: 100% !important;
-  height: 100% !important;
-
-  border-radius: 50% !important;   /* tròn */
-  object-fit: cover !important;
-
-  box-shadow: 0 10px 25px rgba(0,0,0,0.25);
-}
-
-
-

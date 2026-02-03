@@ -1,129 +1,302 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- CSS -->
-   <link rel="stylesheet" href="./portfolio/assets/css/404.css">
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
-      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
-      crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <meta name="keywords" content="Huong Mai, portfolio, MIS, web learner, web design" />
+  <meta name="description" content="Hương Mai Portfolio - MIS Student & Web Design Learner" />
 
-    <!-- Favicon -->
-    <link id="favicon" rel="shortcut icon" href="/portfolio/assets/images/favicon.png" type="image/x-png">
+  <!-- CSS -->
+  <link rel="stylesheet" href="./assets/css/style.css" />
 
-    <title>Got Lost! Page Not Found</title>
+  <!-- Font Awesome -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    referrerpolicy="no-referrer"
+  />
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="./assets/images/favicon.png" type="image/png" />
+
+  <title>Portfolio | Hương Mai</title>
 </head>
 
 <body oncontextmenu="return false">
 
-<!-- navbar starts -->
+<!-- ================= NAVBAR ================= -->
 <header>
-    <a href="/" class="logo"><i class="fab fa-node-js"></i> Hương Mai</a>
+  <a href="./index.html#home" class="logo">
+    <i class="fas fa-laptop-code"></i> Hương Mai
+  </a>
 
-    <div id="menu" class="fas fa-bars"></div>
-    <nav class="navbar">
-        <ul>
-            <li><a href="/#home">Home</a></li>
-            <li><a href="/#about">About</a></li>
-            <li><a href="/#skills">Skills</a></li>
-            <li><a href="/#education">Education</a></li>
-            <li><a href="/#work">Work</a></li>
-            <li><a href="/#experience">Experience</a></li>
-            <li><a href="/#contact">Contact</a></li>
-        </ul>
-    </nav>
+  <div id="menu" class="fas fa-bars"></div>
+
+  <nav class="navbar">
+    <ul>
+      <li><a class="active" href="./index.html#home">Home</a></li>
+      <li><a href="./index.html#about">About</a></li>
+      <li><a href="./index.html#skills">Skills</a></li>
+      <li><a href="./index.html#education">Education</a></li>
+      <li><a href="./index.html#work">Work</a></li>
+      <li><a href="./index.html#experience">Experience</a></li>
+      <li><a href="./index.html#contact">Contact</a></li>
+    </ul>
+  </nav>
 </header>
-<!-- navbar ends -->
 
-<!-- 404 section start -->
-<section class="page_404">
-    <div class="container">
-        <div class="wrapper">
-            <h1 class="text-center">404</h1>
-        </div>
+<!-- ================= HERO ================= -->
+<section class="home" id="home">
+  <div id="particles-js"></div>
 
-        <div class="msg">
-            <h3>Looks like you're lost</h3>
-            <p>The page you are looking for is not available!</p>
+  <div class="content">
+    <h2>Hi There,<br /> I'm Hương <span>Mai</span></h2>
+    <p>I am a Web learner! <span class="typing-text"></span></p>
 
-            <div class="backbtn">
-                <a href="/" class="btn">
-                    <i class="fas fa-arrow-left"></i>
-                    <span>Back to Home</span>
-                </a>
-            </div>
-        </div>
+    <a href="./index.html#about" class="btn">
+      <span>About Me</span>
+      <i class="fas fa-arrow-circle-down"></i>
+    </a>
+
+    <div class="socials">
+      <ul class="social-icons">
+        <li>
+          <a class="github" href="https://github.com/hmai280605" target="_blank" rel="noopener">
+            <i class="fab fa-github"></i>
+          </a>
+        </li>
+        <li>
+          <a class="mail" href="mailto:23070585@vnu.edu.vn" target="_blank" rel="noopener">
+            <i class="fas fa-envelope"></i>
+          </a>
+        </li>
+        <li>
+          <a class="facebook" href="#" target="_blank" rel="noopener">
+            <i class="fab fa-facebook"></i>
+          </a>
+        </li>
+        <li>
+          <a class="instagram" href="#" target="_blank" rel="noopener">
+            <i class="fab fa-instagram"></i>
+          </a>
+        </li>
+      </ul>
     </div>
-</section>
-<!-- 404 section end -->
+  </div>
 
-<!-- footer section starts -->
+  <div class="image">
+    <img draggable="false" class="tilt" src="./assets/images/Mai11.jpg" alt="Huong Mai" />
+  </div>
+</section>
+
+<!-- ================= ABOUT ================= -->
+<section class="about" id="about">
+  <h2 class="heading"><i class="fas fa-user-alt"></i> About <span>Me</span></h2>
+
+  <div class="row">
+    <div class="image">
+      <img draggable="false" class="tilt" src="./assets/images/Mai10.jpg" alt="Huong Mai" />
+    </div>
+
+    <div class="content">
+      <h3>I'm Hương Mai</h3>
+      <span class="tag">MIS Student | Web Design Learner</span>
+
+      <p>
+        I am a MIS student at VNU International School.
+        Currently learning HTML, CSS & JavaScript step by step
+        to become a Web Designer & Front-end Developer.
+      </p>
+
+      <div class="box-container">
+        <div class="box">
+          <p><span>Email :</span> 23070585@vnu.edu.vn</p>
+          <p><span>Phone :</span> 0856 280 605</p>
+          <p><span>Place :</span> Hà Nội, Việt Nam</p>
+        </div>
+      </div>
+
+      <div class="resumebtn">
+        <a href="#" class="btn">
+          <span>Resume</span>
+          <i class="fas fa-chevron-right"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= SKILLS ================= -->
+<section class="skills" id="skills">
+  <h2 class="heading"><i class="fas fa-laptop-code"></i> Skills & <span>Abilities</span></h2>
+
+  <div class="container">
+    <div class="row" id="skillsContainer">
+
+      <div class="bar">
+        <div class="info">
+          <img draggable="false" src="./assets/images/skills/react.png" alt="ReactJS" />
+          <span>ReactJS</span>
+        </div>
+      </div>
+
+      <div class="bar">
+        <div class="info">
+          <img draggable="false" src="./assets/images/skills/node.png" alt="NodeJS" />
+          <span>NodeJS</span>
+        </div>
+      </div>
+
+      <div class="bar">
+        <div class="info">
+          <img draggable="false" src="./assets/images/skills/express.png" alt="ExpressJS" />
+          <span>ExpressJS</span>
+        </div>
+      </div>
+
+      <div class="bar">
+        <div class="info">
+          <img draggable="false" src="./assets/images/skills/js.png" alt="JavaScript" />
+          <span>JavaScript</span>
+        </div>
+      </div>
+
+      <div class="bar">
+        <div class="info">
+          <img draggable="false" src="./assets/images/skills/html.png" alt="HTML5" />
+          <span>HTML5</span>
+        </div>
+      </div>
+
+      <div class="bar">
+        <div class="info">
+          <img draggable="false" src="./assets/images/skills/css.png" alt="CSS3" />
+          <span>CSS3</span>
+        </div>
+      </div>
+
+      <div class="bar">
+        <div class="info">
+          <img draggable="false" src="./assets/images/skills/bootstrap.png" alt="Bootstrap" />
+          <span>Bootstrap</span>
+        </div>
+      </div>
+
+      <div class="bar">
+        <div class="info">
+          <img draggable="false" src="./assets/images/skills/tailwind.png" alt="TailwindCSS" />
+          <span>TailwindCSS</span>
+        </div>
+      </div>
+
+      <div class="bar">
+        <div class="info">
+          <img draggable="false" src="./assets/images/skills/git.png" alt="Git" />
+          <span>Git</span>
+        </div>
+      </div>
+
+      <div class="bar">
+        <div class="info">
+          <img draggable="false" src="./assets/images/skills/github.png" alt="GitHub" />
+          <span>GitHub</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ================= EDUCATION ================= -->
+<section class="education" id="education">
+  <h1 class="heading"><i class="fas fa-graduation-cap"></i> My <span>Education</span></h1>
+  <p class="qoute">Education is the key to unlocking the world.</p>
+
+  <div class="box-container">
+    <div class="box">
+      <div class="content">
+        <h3>VNU International School</h3>
+        <p>MIS - Management Information Systems</p>
+        <h4>2023 - 2027 | Pursuing</h4>
+      </div>
+    </div>
+
+    <div class="box">
+      <div class="content">
+        <h3>THPT Kiến An</h3>
+        <p>High School</p>
+        <h4>2020 - 2023 | Completed</h4>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= CONTACT ================= -->
+<section class="contact" id="contact">
+  <h2 class="heading"><i class="fas fa-headset"></i> Get in <span>Touch</span></h2>
+
+  <div class="container">
+    <div class="content">
+      <form>
+        <div class="form-group">
+          <div class="field">
+            <input type="text" placeholder="Name" required />
+            <i class="fas fa-user"></i>
+          </div>
+
+          <div class="field">
+            <input type="email" placeholder="Email" required />
+            <i class="fas fa-envelope"></i>
+          </div>
+
+          <div class="message">
+            <textarea placeholder="Message" required></textarea>
+            <i class="fas fa-comment-dots"></i>
+          </div>
+        </div>
+
+        <div class="button-area">
+          <button type="submit">Submit <i class="fa fa-paper-plane"></i></button>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- ================= FOOTER ================= -->
 <section class="footer">
-
-    <div class="box-container">
-
-        <div class="box">
-            <h3>Hương Mai's Portfolio</h3>
-            <p>
-                Thank you for visiting my personal portfolio website.
-                <br/><br/>
-                Keep Rising 🚀.
-            </p>
-        </div>
-
-        <div class="box">
-           <div class="box">
-  <h3>quick links</h3>
-  <a href="./index.html#home">
-    <i class="fas fa-chevron-circle-right"></i> home
-  </a>
-  <a href="./index.html#about">
-    <i class="fas fa-chevron-circle-right"></i> about
-  </a>
-  <a href="./index.html#skills">
-    <i class="fas fa-chevron-circle-right"></i> skills
-  </a>
-  <a href="./index.html#education">
-    <i class="fas fa-chevron-circle-right"></i> education
-  </a>
-  <a href="./index.html#work">
-    <i class="fas fa-chevron-circle-right"></i> work
-  </a>
-  <a href="./index.html#experience">
-    <i class="fas fa-chevron-circle-right"></i> experience
-  </a>
-</div>
-
-        <div class="box">
-            <h3>contact info</h3>
-            <p><i class="fas fa-phone"></i> 0856 280 605</p>
-            <p><i class="fas fa-envelope"></i> 23070585@vnu.edu.vn</p>
-            <p><i class="fas fa-map-marked-alt"></i> Nam Từ Liêm, Hà Nội</p>
-
-            <div class="share">
-                <!-- Bạn có thể thêm link mạng xã hội sau -->
-                <a href="mailto:23070585@vnu.edu.vn" class="fas fa-envelope" target="_blank"></a>
-            </div>
-        </div>
+  <div class="box-container">
+    <div class="box">
+      <h3>Hương Mai's Portfolio</h3>
+      <p>Thank you for visiting my personal website.<br />Keep learning 🚀</p>
     </div>
 
-    <h1 class="credit">
-        Designed with <i class="fa fa-heart pulse"></i> by
-        <a href="#"> Hương Mai</a>
-    </h1>
+    <div class="box">
+      <h3>Contact Info</h3>
+      <p><i class="fas fa-phone"></i> 0856 280 605</p>
+      <p><i class="fas fa-envelope"></i> 23070585@vnu.edu.vn</p>
+      <p><i class="fas fa-map-marked-alt"></i> Hà Nội, Việt Nam</p>
+    </div>
+  </div>
 
+  <h1 class="credit">
+    Designed with <i class="fa fa-heart"></i> by <a href="./index.html#home">Hương Mai</a>
+  </h1>
 </section>
-<!-- footer section ends -->
 
-<!-- jquery cdn -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
-  integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
-  crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<!-- ================= JS ================= -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.5/typed.min.js"></script>
 
-<script src="/assets/js/404.js"></script>
+<script src="./assets/js/particles.min.js"></script>
+<script src="./assets/js/app.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js"></script>
+<script src="https://unpkg.com/scrollreveal"></script>
+
+<script src="./assets/js/script.js"></script>
+
 </body>
-</html> 
+</html>
