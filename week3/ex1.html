@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Basic Contact Form</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f6f8;
+    }
+    form {
+      width: 400px;
+      margin: 60px auto;
+      background: #fff;
+      padding: 20px;
+      border-radius: 8px;
+    }
+    input, textarea, button {
+      width: 100%;
+      margin-top: 10px;
+      padding: 10px;
+    }
+    button {
+      background: #007bff;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+  <form action="ex1.php" method="post">
+    <h2>Contact Form</h2>
+
+    <input type="text" name="name" placeholder="Your name">
+    <input type="email" name="email" placeholder="Your email">
+    <textarea name="message" placeholder="Your message"></textarea>
+
+    <button type="submit">Send</button>
+  </form>
+
+</body>
+</html>
