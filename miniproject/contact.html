@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact Form</title>
+  <style>
+    body { font-family: system-ui, Arial; max-width: 720px; margin: 40px auto; padding: 0 16px; }
+    label { display:block; margin: 12px 0 6px; font-weight: 600; }
+    input, textarea { width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 8px; }
+    button { margin-top: 14px; padding: 10px 16px; border: 0; border-radius: 10px; cursor: pointer; }
+    .hint { color:#666; font-size: 14px; margin-top: 6px; }
+  </style>
+</head>
+<body>
+  <h1>Basic Contact Form</h1>
+
+  <form action="submit.php" method="post" novalidate>
+    <label for="name">Họ tên *</label>
+    <input id="name" name="name" type="text" placeholder="VD: Hương Mai" />
+
+    <label for="email">Email *</label>
+    <input id="email" name="email" type="email" placeholder="VD: abc@gmail.com" />
+
+    <label for="subject">Tiêu đề</label>
+    <input id="subject" name="subject" type="text" placeholder="VD: Hỏi về khóa học" />
+
+    <label for="message">Nội dung *</label>
+    <textarea id="message" name="message" rows="6" placeholder="Nhập nội dung..."></textarea>
+
+    <div class="hint">(*) Bắt buộc</div>
+    <button type="submit">Gửi</button>
+  </form>
+</body>
+</html>
