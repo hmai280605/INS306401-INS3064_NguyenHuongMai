@@ -1,0 +1,8 @@
+# Session 06 – Database Design
+
+## Part 1: Normalization
+
+| Table Name | Primary Key | Foreign Key | Normal Form | Description |
+| :--- | :--- | :--- | :--- | :--- |
+| Products | product_id | None | 3NF | Stores product information including name, category, price, and stock quantity. |
+| Orders | order_id | product_id | 3NF | Stores order records. Each order references a product through product_id. |
