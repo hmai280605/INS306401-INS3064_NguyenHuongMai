@@ -265,7 +265,7 @@ const defaultProducts = [
    variant: "Cream",
    category: "Kids Outerwear",
    segment: "Kids",
-   size: "6Y",
+   size: "M",
    unit: "Piece",
    supplier: "Yody Kids",
    warehouse: "Main Warehouse",
@@ -286,7 +286,7 @@ const defaultProducts = [
    variant: "Orange Red",
    category: "Kids Outerwear",
    segment: "Kids",
-   size: "7Y",
+   size: "S",
    unit: "Piece",
    supplier: "Yody Kids",
    warehouse: "North Warehouse",
@@ -307,7 +307,7 @@ const defaultProducts = [
    variant: "Light Grey",
    category: "Kids Outerwear",
    segment: "Kids",
-   size: "7Y",
+   size: "L",
    unit: "Piece",
    supplier: "Yody Kids",
    warehouse: "South Warehouse",
@@ -328,7 +328,7 @@ const defaultProducts = [
    variant: "White / Orange",
    category: "Kids Set",
    segment: "Kids",
-   size: "5Y",
+   size: "M",
    unit: "Set",
    supplier: "Yody Kids",
    warehouse: "Main Warehouse",
@@ -349,7 +349,7 @@ const defaultProducts = [
    variant: "White / Navy",
    category: "Kids Set",
    segment: "Kids",
-   size: "6Y",
+   size: "L",
    unit: "Set",
    supplier: "Yody Kids",
    warehouse: "North Warehouse",
@@ -734,7 +734,7 @@ function getFilteredProducts() {
    ]
      .join(" ")
      .toLowerCase();
-     
+
 
    const matchSearch = !searchValue || haystack.includes(searchValue);
    const matchCategory = categoryValue === "all" || product.category === categoryValue;
