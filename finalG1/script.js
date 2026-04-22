@@ -734,7 +734,7 @@ function getFilteredProducts() {
    ]
      .join(" ")
      .toLowerCase();
-
+     
 
    const matchSearch = !searchValue || haystack.includes(searchValue);
    const matchCategory = categoryValue === "all" || product.category === categoryValue;
