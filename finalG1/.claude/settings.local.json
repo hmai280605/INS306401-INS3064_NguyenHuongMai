@@ -1,0 +1,18 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(ls /c/laragon/bin/)",
+      "Read(//c/laragon/bin//**)",
+      "Bash(/c/laragon/bin/mysql/mysql-8.4.3-winx64/bin/mysql.exe -u root -e 'DROP DATABASE IF EXISTS clothtrack;')",
+      "Bash(/c/laragon/bin/mysql/mysql-8.4.3-winx64/bin/mysql.exe -u root)",
+      "Bash(echo \"Exit: $?\")",
+      "Bash(/c/laragon/bin/mysql/mysql-8.4.3-winx64/bin/mysql.exe -u root -e 'USE clothtrack; SHOW TABLES; SELECT COUNT\\(*\\) as products FROM products; SELECT COUNT\\(*\\) as users FROM users;')",
+      "PowerShell(Start-Process \"http://localhost/finalG1\")",
+      "Bash(/c/laragon/bin/php/php8.4.5Win32VS17x64ts/php.exe -r 'var_dump\\(password_verify\\('\\\\''123456'\\\\'', '\\\\''$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi'\\\\''\\)\\); var_dump\\(password_verify\\('\\\\''password'\\\\'', '\\\\''$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi'\\\\''\\)\\);')",
+      "Bash(curl -s -c /tmp/cookies.txt -X POST http://localhost/finalG1/api/auth.php?action=login -H 'Content-Type: application/json' -d '{\"username\":\"admin\",\"password\":\"123456\"}')",
+      "Bash(curl -s -b /tmp/cookies.txt \"http://localhost/finalG1/api/auth.php?action=check\")",
+      "Bash(find /c/laragon/bin/apache -name \"error.log\" 2>/dev/null | head -3; find /c/laragon/data -name \"*.log\" 2>/dev/null | head -5)",
+      "Read(//c/laragon/data/**)"
+    ]
+  }
+}
